@@ -1,0 +1,24 @@
+# Urban Path Detection System — Dependencies (SegFormer-only)
+# Install with: pip install -r requirements.txt
+#
+# IMPORTANT: Install PyTorch first with CUDA support BEFORE running pip install:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#   (use cu118 if you have CUDA 11.8)
+
+# ── Core ML frameworks ─────────────────────────────────────────────────────
+torch>=2.1.0          # install with CUDA separately (see above)
+torchvision>=0.16.0
+
+# ── HuggingFace ecosystem (SegFormer) ──────────────────────────────────────
+transformers>=4.37.0
+huggingface-hub>=0.20.0
+accelerate>=0.26.0     # optional but helps HF model loading
+
+# ── Computer Vision ────────────────────────────────────────────────────────
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────
+scipy>=1.11.0          # optional, used for mask post-processing
+tqdm>=4.66.0
