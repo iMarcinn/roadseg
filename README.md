@@ -13,26 +13,31 @@ A high-performance computer vision pipeline for detecting traversable paths (roa
 
 #  Installation
 
- 1. Clone and enter the project
+```bash
+# 1. Clone and enter the project
 git clone https://github.com/iMarcinn/roadseg.git
 cd roadseg
- 2. Install PyTorch with CUDA (Required for GPU)
+
+# 2. Install PyTorch with CUDA (Required for GPU)
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
- 3. Install remaining dependencies
+
+# 3. Install remaining dependencies
 pip install -r requirements.txt
+```
 
 #  Running guide
 
 ## Process a video 
 
+```bash
 python run.py --input video.mp4
-
-
+```
 
 ## Process an image
 
+```bash
 python run.py --input image.jpg --output result.jpg
-
+```
 
 ## Advanced Flags:
 
